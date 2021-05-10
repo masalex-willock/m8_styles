@@ -1,0 +1,54 @@
+/*IMPORTS AREA*/
+@font-face{
+	font-family: 'Font1';
+	src: url('./necc/fonts/Ubuntu-light.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'Font2';
+	src: url('./necc/fonts/Vector.ttf') format('truetype');
+}
+
+/*MAIN RESETS*/
+*{
+	padding: 0; margin: 0;
+	box-sizing: border-box;
+	font-family: 'Font1', sans-serif;
+}
+
+
+/*ELEMENTS DEFAULTS*/
+
+/*main*/
+/*article*/
+/*section*/
+/*div*/
+/*headers*/
+h1,h2,h3,h4,h5,h6{
+	font-family: Font2, serif;
+	word-spacing: .4rem;
+}
+
+h1{
+
+}
+
+/*buttons*/
+/*quotes*/
+/*span*/
+/*table*/
+
+
+/*buttons*/
+button{
+	padding: .8rem 2rem; border-radius: 8px;
+	outline: none; border: none;
+	color: white; background: indianred;
+}
+
+/*MY MAIN CLASSES*/
+/*flexing area*/
+/*grid setup area*/
+
+/*OTHER PERSONAL CLASSES*/
+/*pagination*/
