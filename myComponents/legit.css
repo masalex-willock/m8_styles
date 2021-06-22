@@ -1,0 +1,15 @@
+/* styles for my blockquote and its contents */
+blockquote{
+	box-sizing: border-box;
+	padding: .4rem;
+	padding-left: .8rem;
+	position: relative;
+	box-shadow: -4px 0 4px -4px lightgray, 4px 0 4px -4px lightgray;
+}
+.bq-initials{
+	font-style: italic; font-weight: lighter; letter-spacing: 2px; display: inline-block; padding-left: .4rem;
+}
+
+blockquote small{
+	position: absolute; right: 10%;
+}
