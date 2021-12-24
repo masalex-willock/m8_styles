@@ -1,24 +1,45 @@
 /*IMPORTS AREA*/
 @font-face{
 	font-family: 'Font1';
-	src: url('./necc/fonts/Ubuntu-light.ttf') format('truetype');
+	src: url('./necc/fonts/Quicksand.ttf') format('truetype');
 }
 
 @font-face{
 	font-family: 'Font2';
-	src: url('./necc/fonts/Vector.ttf') format('truetype');
+	src: url('./necc/fonts/JosefinSlab-Bold.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'Font3';
+	src: url('./necc/fonts/Rajdhani-Bold.ttf') format('truetype');
+}
+
+/* my variables */
+:root{
+	--color1: rgb(0, 122, 131);
+	--color2: rgb(160, 85, 0);
+	--white: #f9f9f9;
+	--black: #333333;
 }
 
 /*MAIN RESETS*/
 *{
 	padding: 0; margin: 0;
 	box-sizing: border-box;
-	font-family: 'Font1', sans-serif;
+	color: #333333;
+	color: var(--black);
+	font: 1.1rem/1.6 'Font1', sans-serif;
+}
+
+body{
+	background-color: #f9f9f9;
 }
 
 
 /*ELEMENTS DEFAULTS*/
-
+div, section, article{
+	padding: 2rem 0 ;
+}
 /*main*/
 /*article*/
 /*section*/
@@ -27,10 +48,19 @@
 h1,h2,h3,h4,h5,h6{
 	font-family: Font2, serif;
 	word-spacing: .4rem;
+	
 }
 
 h1{
+ text-transform: uppercase;
+ font-size: 2rem;
+}
 
+/* INLINES */
+a{
+	color: rgb(0, 122, 131);
+	color: var(--color1);
+	text-decoration: none;
 }
 
 /*buttons*/
@@ -40,15 +70,62 @@ h1{
 
 
 /*buttons*/
-button{
-	padding: .8rem 2rem; border-radius: 8px;
+button, .btn{
+	padding: .4rem 2rem; border-radius: 4px;
 	outline: none; border: none;
-	color: white; background: indianred;
+	color: white;
+	background: rgb(0, 122, 131);
+	background: var(--color1);
+}
+
+/* .btn1, .btn2, .btn3{
+
+} */
+
+.btn1{
+	background: transparent; color: var(--color1);
+	border: var(--color1) 1px solid;
+}
+.btn2{
+	background: var(--color2);
+	color: white;
+	color: var(--white);
+}
+
+.btn3{
+	background: #333333;
+	color: white;
+	color: var(--white);
 }
 
 /*MY MAIN CLASSES*/
 /*flexing area*/
+
+.flex{
+	display: flex;
+	/* flex-wrap: wrap; */
+}
+
+.flexItem{
+	min-width: 200px;
+}
+
 /*grid setup area*/
 
 /*OTHER PERSONAL CLASSES*/
+/* effector */
+.rounded{
+	border-radius: 20px;
+}
+
+.big{
+	font-size: 1.2rem;
+	padding: .8rem 4rem;
+}
+
+.small{
+	font-size: .8rem;
+	padding: .4rem 1.2rem;
+}
+
 /*pagination*/
